@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         h1 {
+             text-align: center;
+            color: rgb(10, 10, 10);}
+        .box {
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px auto;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: brown;
+        border-radius: 40px;
+    }
+        button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: lightblue;
+        border: none;
+        border-radius: 5px;}
+    </style>
+</head>
+<body><div class="box">
+    <h1><b><u>Calculator</b></u></h1>
+    
+    <input type="number" id="firstNumber" placeholder="Enter First Number" style="display: block; margin: 0 auto;">
+    <input type="number" id="secondNumber" placeholder="Enter Second Number" style="display: block; margin: 0 auto;">
+    <br>
+    <button style = "display: block; margin: 0 auto;" id="addBtn">Add</button>
+    <button style = "display: block; margin: 0 auto;" id="subtractBtn">Subtract</button>
+    <button style = "display: block; margin: 0 auto;" id="multiplyBtn">Multiply</button>
+    <button style = "display: block; margin: 0 auto;" id="divideBtn">Divide</button>
+    <br>
+    <input type ="number" id ="result" placeholder="Result" style="display: block; margin: 0 auto;" readonly>   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(38, 33, 66);
+        }
+        select{
+            padding: 5px;
+            font-size: 20px;
+            border: 2px solid rgb(240, 11, 18);
+            border-radius: 5px;
+            
+        }   
+        input{
+
+            padding: 5px;
+            font-size: 20px;
+            border: 2px solid rgb(240, 11, 18);
+            border-radius: 5px;
+            text-align: center;
+        }   
+         div{
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         gap: 10px;
+         font-size: 20px;
+         color: rgb(15, 19, 88);
+        }
+        .box{
+        border: 2px solid rgb(240, 11, 18);
+        padding: 20px;
+        margin: 20px auto;
+        width: 50%;
+        display: flex;         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+         background-color: rgb(12, 181, 207);
+         border-radius: 40px;   
+        }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+            }  
+         .result-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 15px;
+    border: 2px solid rgb(38, 33, 66);
+    border-radius: 10px;
+    background-color: rgb(10, 160, 185);
+    width: 95%;
+}
+    
+    </style>
+</head>
+<body>
+     <h1><i><u>Marks Management Dashboard</u></i></h1>
+    <div class="box"> 
+    <div >
+     <label>Student Name:<input type = "text" id = "studentname" placeholder = "Enter"></label>
+      <label>Student ID: <input type = "text" id = "studentid" placeholder = "Enter"></label>
+     
+    <label>Course:
+    <select id = "course">
+        <option value = "select">Select Course</option>
+        <option value="BTech">BTech AI/ML</option>
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        <option value="MTECH">MTECH</option>
+    </select>
+    </label>
+    </div>
+    <br>
+    <table border = "2">
+        <thead>
+            <tr>
+                <th>SR No</th>
+                <th>Subjects</th>
+                <th>Marks Obtained</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Math</td>
+                <td><input type="number"  id = "math" placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Python</td>
+                <td><input type="number" id = "python"   placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dsa</td>
+                <td><input type="number" id = "dsa" placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Cyber</td>
+                <td><input type="number" id = "cyber" placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Cloud Computing</td>
+                <td><input type="number" id = "cloud" placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+             </tr>  
+             <tr>
+                <td>6</td>
+                <td>Computer Ecosystem</td>
+                <td><input type="number" id = "computer" placeholder="Enter Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;"></td>
+             </tr>   
+             <tr>
+                <td></td>
+                <td>Total</td>
+                <td><input type="number" id = "total" placeholder="Total Marks" style="width: 97%; padding: 5px; font-size: 20px; border: 2px solid rgb(240, 11, 18); border-radius: 5px; text-align: center;" readonly></td>
+             </tr>    
+        </thead>
+    </table>
+    <button onclick="showResult()">Generate Result</button>
+    <div class="result-box" id="result-box" style="display:none;">
+    <h2 id="result-name"></h2>
+    <h3 id="result-uid"></h3>
+    <h3 id="result-course"></h3>
+    <p id="result-math">1. Math: </p>
+    <p id="result-python">2. Python: </p>
+    <p id="result-dsa">3. DSA: </p>
+    <p id="result-cyber">4. Cyber: </p>
+    <p id="result-cloud">5. Cloud Computing: </p>
+    <p id="result-computer">6. Computer Ecosystem: </p>
+    <h3 id="result-percentage">Percentage: </h3>
+    <h3 id="result-total">Total: </h3>
+    <h2 id="result-message"></h2>
+    </div>
+    </div>
+   
+    <script src = "script.js"></script>
+</body>
+</html>

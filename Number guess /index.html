@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px auto;
+            width: fit-content;
+            background-color: rgb(116, 173, 173);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(206, 191, 192);
+        }
+        h1 {
+            text-align: center;
+            color:brown;
+        }
+        label{
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(210, 235, 109);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<h1><u>Number Guess Game</u></h1>
+<p style="text-align: center;">Try to guess the number between 1 and 100!</p> 
+<p style="text-align: center;">You have 10 attempts to guess the correct number.</p>  
+<form>
+<label for="guessInput" id = "guessLabel">Guess a Number:</label>
+<input type = "text" id = "guessinput" placeholder = "Enter your guess" >
+<button type="button" id="submitBtn" style="display: block; margin: 0 auto;">Submit Guess</button>
+<p id="feedback" style="text-align: center; margin-top: 20px;">Previous guess:  </p>
+<p id="attempts" style="text-align: center; margin-top: 10px;">Attempts left:</p>
+</form>
+</div>
+<div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
