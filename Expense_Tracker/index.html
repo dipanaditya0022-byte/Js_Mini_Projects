@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(235, 8, 8);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><i><u>Expense Tracker</u></i></h1>
+    <div class = "box">
+        <input type = "text" id = "expenseName" placeholder="Enter Expense Name">
+        <input type = "number" id = "expenseAmount" placeholder="Enter Expense Amount">
+        <select id="category">
+            <option value="" disabled selected>Select Expenses</option>
+            <option value="food">Food</option>
+            <option value="shopping">GF's Shopping</option>
+            <option value="transportation">Transportation</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="utilities">Utilities</option>
+            <option value="other">Other</option>
+        </select>
+        <input type = "date" id = "expenseDate">
+        <button id="addExpenseBtn">Add Expense</button>
+            
+
+     </div>   
+    <script src = "script.js"></script>
+</body>
+</html>
